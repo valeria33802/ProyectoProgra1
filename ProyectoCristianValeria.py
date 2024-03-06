@@ -79,9 +79,13 @@ def Menu(self):
                      #Colaborador_Existe = True
                      #break
                  
-                  if Colaborador_Existe:
-                  tipo = input("¿Es una marca de entrada o salida (E/S)?")
-                     
+                  #if Colaborador_Existe:
+                  #Tipo = input("¿Es una marca de entrada o salida (E/S)?")
+                   #  self.marcas.marcar(Codigo, Pin, Tipo)
+                    # self.Planilla.MarcasRegistradas()
+                 #else 
+                  #   print("Por favor, ingrese sus marcas")
+                 
             elif opcion == "2":
                 # Llama a un método que genere la planilla
                 self.generar_planilla()
