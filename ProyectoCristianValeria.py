@@ -12,7 +12,7 @@ class Marcas:
     def __init__(self, Empleado, Codigo, Pin) -> None:
         self.RegistroHoras = {}
         
-    def marcar(self, empleado, codigo, pin, tipo):
+    def Marcar(self, empleado, codigo, pin, tipo):
         if empleado.codigo == codigo and empleado.pin == pin:
             if tipo == "E":
                 #######
@@ -26,27 +26,48 @@ class Marcas:
             print("Código o pin incorrectos.")
 
 class Planilla:
-    def __init__ (self):
+    def __init__(self):
         self.HorasTrabajadas = {}
-        #agrega las horas trabajadas
-    def AgregarHoras(self, dia, HorasTrabajadas):
-        self.HorasTrabajadas[dia] = HorasTrabajadas
-        ##pass
-        #genera los datos de planilla general
+        self.MarcasRegistradas = False  # Atributo para rastrear si se han registrado marcas
 
-
+    def AgregarHoras(self, dia, horastrabajadas):
+        self.HorasTrabajadas[dia] = horastrabajadas
 
     def GenerarPlanilla(self):
-
-        ####Verificar que se registren marcas
-        if not self.MarcasRegistradas: 
-            print("Por favor, registre las marcas para acceder")
-            return 
+        if not self.MarcasRegistradas:  # Verifica si se han registrado marcas antes de generar la planilla
+            print("Por favor, ingrese sus marcas.")
+            return
         
-        ##Muestra los días y horas trabajados
         for dia, horas in self.HorasTrabajadas.items():
             print(f"Día {dia}: {horas} horas trabajadas")
+
+    def MarcasRegistradas(self):
+        self.MarcasRegistradas = True
+
+    # def __init__ (self):
+    #     self.HorasTrabajadas = {}
+    #     #agrega las horas trabajadas
+    # self.MarcasRegistradas = False  
+    # def AgregarHoras(self, dia, HorasTrabajadas):
+    #     self.HorasTrabajadas[dia] = HorasTrabajadas
+    #     ##pass
+    #     #genera los datos de planilla general
+
+
+
+    # def GenerarPlanilla(self):
+
+    #     ####Verificar que se registren marcas
+    #     if not self.MarcasRegistradas: 
+    #         print("Por favor, registre las marcas para acceder")
+    #         return 
+        
+    #     ##Muestra los días y horas trabajados
+    #     for dia, horas in self.HorasTrabajadas.items():
+    #         print(f"Día {dia}: {horas} horas trabajadas")
     
+    # def marcas_registradas(self):
+    #     self.marcas_registradas = True
 ##################################################
 ##################################################
 ##################################################
@@ -87,8 +108,11 @@ def Menu(self):
                   #   print("Por favor, ingrese sus marcas")
                  
             elif opcion == "2":
-                # Llama a un método que genere la planilla
-                self.generar_planilla()
+                # # Llama a un método que genere la planilla
+                # if not self.Planilla.MarcasRegistradas:  # Verifica si se han registrado marcas antes de generar la planilla
+                #  print("Error: Debes registrar las marcas primero.")
+                # else:
+                # self.GenerarPlanilla()
             elif opcion == "3":
                 # Llama a un método que genere el reporte de la planilla
                 self.generar_reporte_planilla()
