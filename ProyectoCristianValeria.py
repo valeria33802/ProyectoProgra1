@@ -50,6 +50,23 @@ class Planilla:
     def LeerReportePlanilla():
         pass
         
+    def CargarHoras():
+        pass
+
+    def CalcularSalarioBruto():
+        pass
+
+    def CalcularDeduccion():
+        pass
+
+    def GenerarPlanilla():
+        pass
+
+    def ImprimirMatriz():
+        pass
+
+    def ReportePlanilla():
+        pass
 ##################################################
 ##################################################
 ##################################################
@@ -95,6 +112,7 @@ def Menu(self):
                 #  print("Error: Debes registrar las marcas primero.")
                 # else:
                 # self.GenerarPlanilla()
+                pass
             elif opcion == "3":
                 # Llama a un método que genere el reporte de la planilla
                 self.generar_reporte_planilla()
