@@ -114,8 +114,12 @@ def Menu(self):
                 # self.GenerarPlanilla()
                 pass
             elif opcion == "3":
+                if not self.Planilla.self.GenerarPlanilla():  # Verifica si se ha generado planilla antes de hacer el reporte
+                #  print("Error: Debes registrar las marcas primero.")
+                # else:
+                # self.GenerarPlanilla()
                 # Llama a un método que genere el reporte de la planilla
-                self.generar_reporte_planilla()
+                    self.GenerarPlanilla()
             elif opcion == "4":
                 # Llama a un método que lea el reporte de la planilla
                 self.leer_reporte_planilla()
