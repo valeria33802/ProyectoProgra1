@@ -44,30 +44,12 @@ class Planilla:
     def MarcasRegistradas(self):
         self.MarcasRegistradas = True
 
-    # def __init__ (self):
-    #     self.HorasTrabajadas = {}
-    #     #agrega las horas trabajadas
-    # self.MarcasRegistradas = False  
-    # def AgregarHoras(self, dia, HorasTrabajadas):
-    #     self.HorasTrabajadas[dia] = HorasTrabajadas
-    #     ##pass
-    #     #genera los datos de planilla general
+    def GenerarReportePlanilla():
+        pass
 
-
-
-    # def GenerarPlanilla(self):
-
-    #     ####Verificar que se registren marcas
-    #     if not self.MarcasRegistradas: 
-    #         print("Por favor, registre las marcas para acceder")
-    #         return 
+    def LeerReportePlanilla():
+        pass
         
-    #     ##Muestra los días y horas trabajados
-    #     for dia, horas in self.HorasTrabajadas.items():
-    #         print(f"Día {dia}: {horas} horas trabajadas")
-    
-    # def marcas_registradas(self):
-    #     self.marcas_registradas = True
 ##################################################
 ##################################################
 ##################################################
@@ -86,14 +68,14 @@ def Menu(self):
             if opcion == "1":
                 # Llama a un método que maneje las marcas
                 #self.manejar_marcas()
-                 print("Bienvenido")
+                 print("Bienvenido/a")
                  Codigo = input("Ingrese su código: ")
                  Pin = input("Ingrese su PIN: ")
-                 ###tipo = input("¿Es una marca de entrada o salida? (E/S): ")
+                 
                  
                  ###opcion = Menu()
                  #variable booleana para verificar la exitencia del empleado
-                 Colaborador_Existe: False
+                 #Colaborador_Existe: False
                  #for Colaborador in ListaColaboradores:
                      ####verifica que el codigo del empleado y el pin existan en el sistema
                      #if Colaborador.Codigo == Codigo and Colaborador.Pin == Pin
