@@ -12,18 +12,20 @@ class Marcas:
     def __init__(self, Empleado, Codigo, Pin) -> None:
         self.RegistroHoras = {}
         
-    def Marcar(self, Empleado, Codigo, Pin, Tipo):
-        if Empleado.Codigo == Codigo and Empleado.Pin == Pin:
-            if Tipo == "E":
-                #######
-                pass
-            elif Tipo == "S":
-                #######
-                pass
-            else:
-                print("Por favor intente de nuevo")
-        else:
-            print("Código o pin incorrectos.")
+    def Marcar(self):
+        pass
+        #ESTE CODIGO MUY PROBABLEMENTE NO LO USEMOS PORQUE LA VALIDACION DEL PIN Y CODIGO ESTÁ EN EL MENÚ
+        # if Empleado.Codigo == Codigo and Empleado.Pin == Pin:
+        #     if Tipo == "E":
+        #         #######
+        #         pass
+        #     elif Tipo == "S":
+        #         #######
+        #         pass
+        #     else:
+        #         print("Por favor intente de nuevo")
+        # else:
+        #     print("Código o pin incorrectos.")
 
 class Planilla:
     def __init__(self):
