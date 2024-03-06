@@ -12,16 +12,16 @@ class Marcas:
     def __init__(self, Empleado, Codigo, Pin) -> None:
         self.RegistroHoras = {}
         
-    def Marcar(self, empleado, codigo, pin, tipo):
-        if empleado.codigo == codigo and empleado.pin == pin:
-            if tipo == "E":
+    def Marcar(self, Empleado, Codigo, Pin, Tipo):
+        if Empleado.Codigo == Codigo and Empleado.Pin == Pin:
+            if Tipo == "E":
                 #######
                 pass
-            elif tipo == "S":
+            elif Tipo == "S":
                 #######
                 pass
             else:
-                print("Tipo de marca inválido. Debe ser 'entrada' o 'salida'.")
+                print("Por favor intente de nuevo")
         else:
             print("Código o pin incorrectos.")
 
@@ -80,9 +80,9 @@ def Menu(self):
             print("3. Reporte de planilla")
             print("4. Leer reporte de planilla")
             print("5. Salir")
-            opcion = input("Seleccione una opción: ")
+            Opcion = input("Seleccione una opción: ")
 
-            if opcion == "1":
+            if Opcion == "1":
                 # Llama a un método que maneje las marcas
                 #self.manejar_marcas()
                  print("Bienvenido/a")
@@ -106,24 +106,24 @@ def Menu(self):
                  #else 
                   #   print("Por favor, ingrese sus marcas")
                  
-            elif opcion == "2":
+            elif Opcion == "2":
                 # # Llama a un método que genere la planilla
                 # if not self.Planilla.MarcasRegistradas:  # Verifica si se han registrado marcas antes de generar la planilla
                 #  print("Error: Debes registrar las marcas primero.")
                 # else:
                 # self.GenerarPlanilla()
                 pass
-            elif opcion == "3":
+            elif Opcion == "3":
                 if not self.Planilla.self.GenerarPlanilla():  # Verifica si se ha generado planilla antes de hacer el reporte
                 #  print("Error: Debes registrar las marcas primero.")
                 # else:
                 # self.GenerarPlanilla()
                 # Llama a un método que genere el reporte de la planilla
                     self.GenerarPlanilla()
-            elif opcion == "4":
+            elif Opcion == "4":
                 # Llama a un método que lea el reporte de la planilla
-                self.leer_reporte_planilla()
-            elif opcion == "5":
+                self.LeerReportePlanilla()
+            elif Opcion == "5":
                 break
             else:
                 print("Opción inválida.")
