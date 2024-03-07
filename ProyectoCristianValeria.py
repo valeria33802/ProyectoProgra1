@@ -27,7 +27,7 @@ class Marcas:
         else:
         #     print("Código o pin incorrectos.")
             pass
-        
+
 
 class Planilla:
     def __init__(self):
@@ -123,7 +123,7 @@ def Menu(self):
                 # else:
                 # self.GenerarPlanilla()
                 # Llama a un método que genere el reporte de la planilla
-                    self.GenerarPlanilla()
+                    self.ReportePlanilla()
             elif Opcion == "4":
                 # Llama a un método que lea el reporte de la planilla
                 self.LeerReportePlanilla()
