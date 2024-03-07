@@ -10,7 +10,7 @@ class Colaborador:
 
 class Marcas:
     def __init__(self, Empleado, Codigo, Pin) -> None:
-        self.RegistroHoras = {}
+        self.RegistroHoras = []
         
     def Marcar(self, Tipo):
         pass
@@ -57,6 +57,8 @@ class Planilla:
     def CargarHoras():
         pass
 
+    def CalcularSalarioNeto():
+        pass
     def CalcularSalarioBruto():
         pass
 
