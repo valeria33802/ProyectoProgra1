@@ -75,11 +75,14 @@ class Planilla:
         pass
 
     def CalcularSalarioNeto():
+        SalarioNeto = []
         pass
     def CalcularSalarioBruto():
+        SalarioBruto = []
         pass
 
     def CalcularDeduccion():
+        
         pass
 
 ##################################################
