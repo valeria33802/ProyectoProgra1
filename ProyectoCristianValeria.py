@@ -5,9 +5,19 @@ class Colaborador:
         self.Nombre = Nombre
         self.Codigo = Codigo
         self.Pin = Pin
-
-
         ##pass
+
+    def Empleado():
+        DatosEmpleado = [
+        [1, "l", "k", "m", "j", "v"]
+        [2, "l", "k", "m", "j", "v"]
+        [3, "l", "k", "m", "j", "v"]
+        [4, "l", "k", "m", "j", "v"]
+        [5, "l", "k", "m", "j", "v"]
+        ]
+        pass
+        
+
 
 
 class Marcas:
@@ -82,7 +92,7 @@ class Planilla:
         pass
 
     def CalcularDeduccion():
-        
+
         pass
 
 ##################################################
