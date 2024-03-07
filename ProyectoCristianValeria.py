@@ -5,6 +5,8 @@ class Colaborador:
         self.Nombre = Nombre
         self.Codigo = Codigo
         self.Pin = Pin
+
+
         ##pass
 
 
@@ -54,6 +56,21 @@ class Planilla:
     def LeerReportePlanilla():
         pass
         
+    def GenerarPlanilla():
+        pass
+
+    def ImprimirMatriz():
+        pass
+
+    def ReportePlanilla():
+        pass
+
+    #######################################################
+    #######################################################
+    #######################################################
+    #######################################################
+    #######################################################
+
     def CargarHoras():
         pass
 
@@ -65,14 +82,6 @@ class Planilla:
     def CalcularDeduccion():
         pass
 
-    def GenerarPlanilla():
-        pass
-
-    def ImprimirMatriz():
-        pass
-
-    def ReportePlanilla():
-        pass
 ##################################################
 ##################################################
 ##################################################
@@ -115,15 +124,14 @@ def Menu(self):
             elif Opcion == "2":
                 # # Llama a un método que genere la planilla
                 # if not self.Planilla.MarcasRegistradas:  # Verifica si se han registrado marcas antes de generar la planilla
-                #  print("Error: Debes registrar las marcas primero.")
+                #  print("Por favor, registre sus marcas.")
                 # else:
                 # self.GenerarPlanilla()
                 pass
             elif Opcion == "3":
                 if not self.Planilla.self.GenerarPlanilla():  # Verifica si se ha generado planilla antes de hacer el reporte
-                #  print("Error: Debes registrar las marcas primero.")
+                #  print("Por favor, genere planilla")
                 # else:
-                # self.GenerarPlanilla()
                 # Llama a un método que genere el reporte de la planilla
                     self.ReportePlanilla()
             elif Opcion == "4":
