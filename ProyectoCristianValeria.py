@@ -27,6 +27,7 @@ class Marcas:
         else:
         #     print("Código o pin incorrectos.")
             pass
+        
 
 class Planilla:
     def __init__(self):
