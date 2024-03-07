@@ -8,7 +8,7 @@ class Colaborador:
         ##pass
 
     def Empleado():
-        DatosEmpleado = [
+        DiasEmpleado = [
         [1, "l", "k", "m", "j", "v"]
         [2, "l", "k", "m", "j", "v"]
         [3, "l", "k", "m", "j", "v"]
@@ -16,8 +16,6 @@ class Colaborador:
         [5, "l", "k", "m", "j", "v"]
         ]
         pass
-        
-
 
 
 class Marcas:
